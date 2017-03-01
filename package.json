@@ -1,0 +1,25 @@
+{
+  "name": "cordovadoublerobotics",
+  "version": "0.0.1",
+  "description": " Cordova IOS plugin wrapping Double Robotics SDK",
+  "cordova": {
+    "id": "cordova-plugin-double-robotics",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Navneethk/Cordova-Double-Robotics.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Navneeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Navneethk/Cordova-Double-Robotics/issues"
+  },
+  "homepage": "https://github.com/Navneethk/Cordova-Double-Robotics#readme"
+}
