@@ -14,7 +14,7 @@
             </feature>
         </config-file>
         <!-- DoubleControl SDK -->
-        <framework src="lib/DoubleControlSDK.framework" custom="true" />
+        <framework src="DoubleControlSDK.framework" custom="true" />
         <!-- iOS shared dependencies -->
         <framework src="ExternalAccessory.framework" />
         <!-- Bridging header for using ObjetiveC libraries in Swift -->
