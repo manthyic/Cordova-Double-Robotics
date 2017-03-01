@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-double-robotics" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordovadoublerobotics</name>
+    <description> Cordova IOS plugin wrapping Double Robotics SDK</description>
+    <js-module name="cordovadoublerobotics" src="www/cordovadoublerobotics.js">
+        <clobbers target="cordova.plugins.cordovadoublerobotics" />
+    </js-module>
+      <platform name="ios">
+    
+        <config-file target="config.xml" parent="/*">
+            <feature name="cordovadoublerobotics">
+                <param name="ios-package" value="cordovadoublerobotics" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <!-- DoubleControl SDK -->
+        <framework src="lib/DoubleControlSDK.framework" custom="true" />
+        <!-- iOS shared dependencies -->
+        <framework src="ExternalAccessory.framework" />
+        <!-- Bridging header for using ObjetiveC libraries in Swift -->
+        <header-file src="src/ios/DoubleControlSDK.h" />
+        <!-- Project source files -->
+        <source-file src="src/ios/DRDouble.h" />
+    </platform>
+</plugin>
